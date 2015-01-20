@@ -33,8 +33,8 @@ require_once( FRAMEWORK . '/init.php');
  * --------------------------------------------------------------------------------------------------------------
  */
 
-if ( ! function_exists( 'opal_setup' ) ) {
-	function opal_setup() {
+if ( ! function_exists( 'opal_theme_setup' ) ) {
+	function opal_theme_setup() {
 		global $content_width;
 
 		/**
@@ -109,7 +109,7 @@ if ( ! function_exists( 'opal_setup' ) ) {
 		add_theme_support( 'custom-header', $header_args );
 	}
 
-	add_action( 'after_setup_theme', 'opal_setup' );
+	add_action( 'after_setup_theme', 'opal_theme_setup' );
 }
 
 /**
