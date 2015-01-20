@@ -1,6 +1,6 @@
 ### Opal Free WordPress Theme
 -----------------------------
-![Opal WordPress Theme, Free twitter bootstrap theme](https://www.dropbox.com/s/qe5icj8ni4brgf2/opal-free-wordpress-bootstrap-theme.png)
+![Opal WordPress Theme, Free twitter bootstrap theme](https://dl-web.dropbox.com/get/github/opal-free-wordpress-bootstrap-theme.png?_subject_uid=129400476&w=AAAYiyJiJs_BA28GoSdlfbmUEyj_xBojKzmu2tR0WKsCJQ)
 
 Opal WordPress Theme is responsive, elegant and clean Theme. Opal WordPress Theme being responsinve is optimized for all devices like iPhone, Tablet, macbook, desktop & all other wide and small devices. Theme supports all WordPress features e.g; custom header, custom background, post thumbnails, post formats, breadcrumbs etc. With jQuery and Masonry its gallery is neat and clean and well formated, it also has masonry layout for 404 recent posts and not found page recent posts. Theme also have different jquery animations. Theme is widgetized and is translation ready. French is already translated in the theme.
 
