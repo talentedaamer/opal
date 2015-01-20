@@ -1,0 +1,203 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: opal\n"
+"POT-Creation-Date: 2014-08-04 16:13+0500\n"
+"PO-Revision-Date: 2014-08-04 16:43+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Error 404 - Nothing Found"
+msgstr "Erreur 404 - Rien Trouvé"
+
+#: 404.php:19
+msgid "It looks like nothing was found here. Try searching for something else."
+msgstr "Il ressemble à rien n'a été trouvé ici. Essayez quelque chose d'autre."
+
+#: 404.php:27 content-none.php:22
+msgid "Recent Posts"
+msgstr "Les messages récents"
+
+#: archive.php:19
+#, php-format
+msgid "Daily Archives for %s"
+msgstr "Archives quotidiennes pour %s"
+
+#: archive.php:21
+#, php-format
+msgid "Monthly Archives for %s"
+msgstr "Archives mensuelles pour %s"
+
+#: archive.php:21
+msgctxt "Monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:23
+#, php-format
+msgid "Yearly Archives for %s"
+msgstr "Archives annuelles pour %s"
+
+#: archive.php:23
+msgctxt "Yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:25
+msgid "Archives"
+msgstr "Archives"
+
+#: author.php:17
+#, php-format
+msgid "All posts by %s."
+msgstr "Tous les messages de %s"
+
+#: category.php:18
+#, php-format
+msgid "Category archive for %s"
+msgstr "Archives de catégorie pour %s"
+
+#: comments.php:12
+msgid "You cannot access this page directly."
+msgstr "Vous ne pouvez pas accéder directement à cette page."
+
+#: comments.php:21
+msgid ""
+"This post is password protected. Enter the password to view the comments."
+msgstr ""
+"Ce poste est protégé par mot. Entrez le mot de passe pour afficher les "
+"commentaires."
+
+#: comments.php:33
+#, php-format
+msgctxt "Comment title"
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] "un commentaire"
+msgstr[1] "%1$s commentaires"
+
+#: comments.php:47
+msgid "&larr; Older Comments"
+msgstr "&larr; Commentaires plus anciens"
+
+#: comments.php:51
+msgid "Newer Comments &rarr;"
+msgstr "Commentaires les plus récents &rarr;"
+
+#: comments.php:61
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: content-audio.php:29 content-gallery.php:29 content-image.php:29
+#: content-link.php:14 content-quote.php:14 content-video.php:29
+#: content.php:39
+msgid "Read More &rarr;"
+msgstr "En savoir plus &rarr;"
+
+#: content-audio.php:40 content-gallery.php:40 content-image.php:40
+#: content-link.php:30 content-video.php:40 content.php:53
+msgid "Written by "
+msgstr "écrit par"
+
+#: content-none.php:11
+msgid "Nothing Found!"
+msgstr "Rien trouvé!"
+
+#: content-none.php:14
+msgid ""
+"It looks like nothing was found here. Try searching for something else or "
+"see the latest posts."
+msgstr ""
+"Il ne ressemble à rien a été trouvé ici. Essayez quelque chose d'autre ou "
+"voir les derniers messages."
+
+#: footer.php:26
+msgid "All rights reserved"
+msgstr "Tous les droits sont réservés"
+
+#: framework/opal-breadcrumbs.php:99
+msgid "Page"
+msgstr "Page"
+
+#: framework/opal-filters.php:25
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: framework/opal-filters.php:42
+msgid ""
+"<p>This post is password protected. To view it please enter your password "
+"below:</p>"
+msgstr ""
+"<p>Ce poste est protégé par mot. Pour voir s'il vous plaît entrer votre mot "
+"de passe ci-dessous:</p>"
+
+#: framework/opal-pagination.php:15
+msgid "&larr; Newer Posts"
+msgstr "&larr; Les nouveaux messages"
+
+#: framework/opal-pagination.php:22
+msgid "Older Posts &rarr;"
+msgstr "Messages plus anciens &rarr;"
+
+#: framework/opal-post-meta.php:67
+msgid "Leave a comment"
+msgstr "Ajouter un commentaire"
+
+#: framework/opal-post-meta.php:67
+msgid "One Comment"
+msgstr "un commentaire"
+
+#: framework/opal-post-meta.php:67
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: framework/opal-post-meta.php:74 page.php:42 template-full-width.php:42
+msgid "Edit"
+msgstr "Modifier"
+
+#: framework/opal-widget-areas.php:16
+msgid "Main Widget Area"
+msgstr "Principal Zone Widget"
+
+#: framework/opal-widget-areas.php:18
+msgid "Appears on posts and pages."
+msgstr "Apparaît sur les messages et les pages."
+
+#: framework/opal-widget-areas.php:28
+msgid "Footer Widget Area"
+msgstr "Pied de page Zone Widget"
+
+#: framework/opal-widget-areas.php:30
+msgid "Appears on the footer."
+msgstr "Apparaît sur le pied de page."
+
+#: functions.php:84
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: search.php:18
+#, php-format
+msgid "Search results for %s"
+msgstr "Résultats de recherche pour%s"
+
+#: searchform.php:11
+msgid "Search"
+msgstr "Recherche"
+
+#: tag.php:18
+#, php-format
+msgid "Tag archive for %s"
+msgstr "Tag Archive pour %s"

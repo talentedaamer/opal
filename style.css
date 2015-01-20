@@ -1,0 +1,650 @@
+/**
+ * style.css
+ *
+ * Theme Name: opal
+ * Description: Opal WordPress Theme is responsive, elegant and clean Theme. Opal WordPress Theme being responsinve is optimized for all devices like iPhone, Tablet, macbook, desktop & all other wide and small devices. Theme supports all WordPress features e.g; custom header, custom background, post thumbnails, post formats, breadcrumbs etc. With jQuery and Masonry its gallery is neat and clean and well formated, it also has masonry layout for 404 recent posts and not found page recent posts. Theme also have different jquery animations. Theme is widgetized and is translation ready. French is already translated in the theme.
+ * Version: 1.2.5
+ * Author: Aamer Shhahzad
+ * Author URI: http://oopthemes.com/
+ * Theme URI: http://oopthemes.com/shop/opal/
+ * License: GNU General Public License version 3.0
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+ * Tags: one-column, two-columns, right-sidebar, left-sidebar, fluid-layout, custom-menu, featured-images, post-formats, sticky-post, translation-ready
+ * Text Domain: opal
+ * Domain Path: /lang
+ */
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Base styles.
+ * ----------------------------------------------------------------------------------------
+ */
+body {
+  position: relative;
+  color: #222222;
+  font: 14px/21px "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Default spacing for paragraphs.
+ */
+p {
+  margin-bottom: 21px;
+}
+
+/**
+ * Default styles for all headings.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 21px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/**
+ * Links.
+ */
+a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+a:hover {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+/**
+ * Blockquotes.
+ */
+blockquote {
+  font-style: italic;
+}
+blockquote cite {
+  display: block;
+}
+
+/**
+ * HR.
+ */
+hr {
+  margin: 21px 0;
+  border-color: #ecf0f1;
+}
+
+/**
+ * Make sure videos and embeds fit inside their containers.
+ */
+embed,
+iframe,
+object,
+video {
+  max-width: 100%;
+}
+
+/**
+ * Code.
+ */
+code {
+  white-space: normal;
+}
+
+/**
+ * --------------------------------------------------------------------------------------------------------------
+ *	SITE HEADER SECTION
+ * --------------------------------------------------------------------------------------------------------------
+ */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 42px;
+  padding: 0;
+}
+.site-header .header-inner {
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+.site-header .breadcrumb-wrap {
+  margin-bottom: 0;
+}
+.site-header .breadcrumb-wrap .breadcrumb {
+  background-color: #359c8a;
+  border-color: #2f8979 #2f8979 transparent #2f8979;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0;
+  color: white;
+  border-radius: 0;
+}
+.site-header .breadcrumb-wrap .breadcrumb > .active {
+  color: white;
+}
+.site-header .breadcrumb-wrap .breadcrumb a {
+  color: #084d54;
+}
+.site-header .breadcrumb-wrap .breadcrumb a:hover {
+  color: #06383d;
+}
+.site-header .site-logo .site-title {
+  margin: 0 0 10px 0;
+}
+.site-header .site-logo .site-description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.header-banner {
+  position: relative;
+}
+.header-banner img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.absolute-logo {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+}
+.absolute-logo a {
+  background: #359c8a;
+  background: rgba(53, 156, 138, 0.3);
+  padding: 10px 20px 9px;
+  position: relative;
+  z-index: 100;
+  color: white;
+}
+.absolute-logo a:before {
+  border-top: 30px solid #359c8a;
+  border-top: 30px solid rgba(53, 156, 138, 0.3);
+  border-right: 30px solid #359c8a;
+  border-right: 30px solid rgba(53, 156, 138, 0.3);
+  border-bottom: 30px solid #359c8a;
+  border-bottom: 30px solid rgba(53, 156, 138, 0.3);
+  border-left: 30px solid transparent;
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 0;
+  z-index: 1001;
+}
+.absolute-logo a:after {
+  border-top: 30px solid #359c8a;
+  border-top: 30px solid rgba(53, 156, 138, 0.3);
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #359c8a;
+  border-bottom: 30px solid rgba(53, 156, 138, 0.3);
+  border-left: 30px solid #359c8a;
+  border-left: 30px solid rgba(53, 156, 138, 0.3);
+  content: "";
+  position: absolute;
+  right: -60px;
+  top: 0;
+  z-index: 1001;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Navigation styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+.top-menu {
+  background-color: #ff6165;
+}
+.top-menu .main-nav {
+  margin: 0;
+  background-color: transparent;
+  border: none;
+}
+.top-menu .main-nav .navbar-nav > li > a {
+  color: #4b4e4f;
+}
+.top-menu .main-nav .dropdown-menu {
+  padding: 15px;
+}
+.top-menu .main-nav .dropdown-menu > li > a {
+  padding: 5px 0;
+  border-bottom: 1px dashed #d9d9d9;
+}
+.top-menu .main-nav .dropdown-menu > li > a:hover {
+  background-color: transparent;
+}
+.top-menu .main-nav .dropdown-menu .active > a {
+  color: #ff6165;
+  background-color: transparent;
+  border-bottom: 1px solid #ff6165;
+}
+.top-menu .main-nav .dropdown-menu > li:last-child a {
+  border-bottom: medium none;
+  padding-bottom: 0;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Main content styles.
+ * ----------------------------------------------------------------------------------------
+ */
+/**
+ * Container adjacent to the sidebar.
+ * This will host the posts or page content.
+ */
+.main-content {
+  margin-bottom: 42px;
+}
+
+.post.type-post,
+.page.type-page {
+  margin-bottom: 42px;
+}
+
+/**
+ * 404.
+ */
+.container-404 {
+  margin-bottom: 42px;
+  text-align: center;
+}
+.container-404 .search-wrap {
+  float: none;
+  margin: 0 auto;
+}
+.container-404 .recent-posts-wrap {
+  margin-top: 42px;
+}
+.container-404 .recent-posts-wrap .item {
+  margin-bottom: 42px;
+  position: relative;
+}
+.container-404 .recent-posts-wrap .item .post-thumb img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.container-404 .recent-posts-wrap .item .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  padding: 10px;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container-404 .recent-posts-wrap .item .overlay .post-title a {
+  margin: 0 0 10px 0;
+  padding: 5px 0;
+  color: white;
+  border-bottom: 1px solid #d9d9d9;
+  display: inline;
+  line-height: 30px;
+}
+.container-404 .recent-posts-wrap .item .overlay > p {
+  color: white;
+  margin: 0;
+}
+.container-404 .recent-posts-wrap .item .overlay > p > btn-primary {
+  margin-top: 10px;
+}
+.container-404 .recent-posts-wrap .item .no-post-thumb > a {
+  background: none repeat scroll 0 0 #ccc;
+  display: block;
+  height: 250px;
+  line-height: 250px;
+}
+
+/**
+ * --------------------------------------------------------------------------------------------------------------
+ *	article section
+ * --------------------------------------------------------------------------------------------------------------
+ */
+.main-content .post,
+.main-content .page,
+.sidebar .widget,
+.comments-area,
+.container-404 {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  padding: 42px;
+  position: relative;
+  overflow: hidden;
+}
+
+.entry-header h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.entry-thumbnail {
+  margin: 0 0 20px 0;
+}
+.entry-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.entry-meta li > .fa {
+  color: #ff6165;
+  margin: 0 5px 0 0;
+}
+
+.entry-footer p {
+  margin: 0;
+}
+.entry-footer .author-title {
+  margin: 0 0 10px 0;
+}
+
+.page-header {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  padding: 42px;
+  margin: 0 0 42px;
+  position: relative;
+  overflow: hidden;
+}
+.page-header h1 {
+  margin: 0;
+}
+.page-header p {
+  margin: 10px 0 0 0;
+}
+/**
+ * Entry header.
+ */
+.entry-header {
+  word-wrap: break-word;
+}
+
+/**
+ * Entry meta.
+ */
+.sticky .entry-meta .meta-date {
+  display: none;
+}
+.entry-meta .meta-icon {
+  background-color: #ff6165;
+  width: 100px;
+  height: 100px;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+  line-height: 160px !important;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+  transform: rotate(45deg);
+}
+
+/**
+ * Entry content.
+ */
+.entry-content {
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.gallery .gallery-item {
+  padding: 10px !important;
+}
+.gallery .gallery-item .gallery-icon {
+  position: relative;
+}
+.gallery .gallery-item .gallery-icon a img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.gallery .gallery-item .gallery-caption {
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  display: none;
+  margin: 0 10px 10px !important;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+ * --------------------------------------------------------------------------------------------------------------
+ *	comment section
+ * --------------------------------------------------------------------------------------------------------------
+ */
+.comments-area .comment-reply-title {
+  margin: 0 0 10px 0;
+}
+.comments-area .comments-title {
+  margin: 0 0 10px 0;
+}
+.comments-area .form-submit {
+  margin: 0;
+}
+.comments {
+  word-wrap: break-word;
+}
+.comments .comment.bypostauthor {
+  display: inline-block;
+}
+
+/**
+ * single image caption
+ */
+.entry-content .wp-caption {
+  position: relative;
+}
+
+.entry-content .wp-caption-text {
+  background-color: rgba(225, 97, 101, 0.3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+  color: #fff;
+  padding: 10px;
+  font-style: normal;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Form styles.
+ * ----------------------------------------------------------------------------------------
+ */
+form button,
+form input,
+form select,
+form textarea {
+  max-width: 100%;
+}
+form input[type="submit"],
+form input[type="button"] {
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Sidebar styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+.sidebar {
+  margin-bottom: 42px;
+}
+.sidebar .widget-title {
+  border-bottom: 1px solid #06383d;
+  color: #084d54;
+  font-size: 22px;
+  margin: 0 0 20px;
+  padding: 0 0 5px;
+}
+.sidebar .widget ul > li {
+  border-bottom: 1px dashed #d9d9d9;
+  padding: 5px 0;
+}
+.sidebar .rss-date {
+  display: block;
+  font-style: italic;
+}
+.sidebar .rssSummary + cite {
+  display: block;
+  margin-bottom: 21px;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Footer styles.
+ * ----------------------------------------------------------------------------------------
+ */
+/**
+ * Main footer.
+ */
+.site-footer {
+  background-color: #359c8a;
+  padding: 20px 0;
+  color: white;
+}
+.site-footer .copyright p {
+  margin: 0;
+}
+.footer-sidebar .widget .widget-title {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0 0 5px 0;
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+}
+.footer-sidebar .widget > ul > li {
+  border-bottom: 1px dashed #06383d;
+  padding: 5px 0;
+}
+.footer-sidebar .widget > ul > li a {
+  color: #084d54;
+}
+.footer-sidebar .widget > ul > li a:hover {
+  color: #06383d;
+}
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Widget styles.
+ * ----------------------------------------------------------------------------------------
+ */
+.widget {
+  margin-bottom: 42px;
+  word-wrap: break-word;
+}
+.widget ul,
+.widget ol {
+  padding-left: 0;
+}
+.widget ul li ol,
+.widget ul li ul,
+.widget ol li ol,
+.widget ol li ul {
+  margin-left: 21px;
+}
+.widget > ul,
+.widget > ol,
+.widget .menu {
+  list-style: none;
+}
+
+/**
+ * Custom widget: Business hours.
+ */
+.widget-business-hours ul li span {
+  font-weight: bold;
+}
+
+/**
+ * WordPress required classes.
+ */
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 10px 10px;
+}
+
+.wp-caption,
+.wp-caption-text,
+.gallery-caption {
+  max-width: 100%;
+}
+
+.protected-form {
+  float: none;
+  margin: 0 auto;
+}
+
+
+/**
+ * --------------------------------------------------------------------------------------------------------------
+ *	media queries
+ * --------------------------------------------------------------------------------------------------------------
+ */
+@media (min-width: 768px) {
+  .top-menu .main-nav {
+    padding: 0;
+  }
+}
+
+
+.dropdown-menu>li /* To prevent selection of text */
+{   position:relative;
+    -webkit-user-select: none; /* Chrome/Safari */       
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+    cursor:pointer;
+}
+.dropdown-menu .sub-menu
+{
+    left: 100%;
+    position: absolute;
+    top: 0;
+    display:none;
+    margin-top: -1px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    border-left-color:#fff;
+    box-shadow:none;
+}
+.right-caret:after,.left-caret:after
+ {  content:"";
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    margin-left:5px;
+}
+.right-caret:after
+{   border-left: 5px solid #ffaf46;
+}
+.left-caret:after
+{   border-right: 5px solid #ffaf46;
+}

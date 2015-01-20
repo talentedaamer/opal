@@ -1,0 +1,36 @@
+/**
+ * --------------------------------------------------------------------------------------------------------------
+ *	Changelog
+ * --------------------------------------------------------------------------------------------------------------
+ */
+
+	version 1.2.4
+	-------------
+	Licensed info included for photos used.
+
+	version 1.2.4
+	-------------
+	Theme uri changed,
+
+ 	version 1.2.3
+ 	-------------
+ 	comment form display issue fixed.
+ 	post meta divided, post tags after content.
+
+ 	version 1.2.2
+ 	-------------
+ 	core masonry included instead of custom script.
+ 	removed background default texture image.
+ 	changelog.txt file created.
+ 	title and descrition tags removed from header.
+ 	wp_title filter added.
+
+ 	version 1.1
+ 	-----------
+ 	Masonry licence included
+
+ 	Current Released Version = v.1.0
+ 	Dated : 04 August, 2014.
+
+
+
