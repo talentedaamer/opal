@@ -15,9 +15,9 @@ To install Opal WordPress theme downloaded from github
 ### Installation from WordPress Theme Repository.
 -------------------------------------------------
 To install Opal WordPress theme from WordPress repository,
-*Go to Dashboard->appearance->themes->add new
-*Search for "Opal" and click on install theme to install.
-*active the theme and enjoy.
+* Go to Dashboard->appearance->themes->add new
+* Search for "Opal" and click on install theme to install.
+* active the theme and enjoy.
 
 ### Authors and Contributors
 ----------------------------
