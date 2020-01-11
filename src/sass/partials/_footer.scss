@@ -1,0 +1,48 @@
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Footer styles.
+ * ----------------------------------------------------------------------------------------
+ */
+.site-footer {
+    background-color: #359c8a;
+    padding: 40px 0;
+    color: white;
+    
+    & a {
+        color: #ffffff;
+        &:hover {
+            color: #333333;
+            text-decoration: none;
+        }
+    }
+
+    .copyright {
+        border-top: 1px solid rgba(255,255,255,0.3);
+        padding-top: 20px;
+        & p {
+            margin: 0;
+        }
+    }
+}
+  
+.footer-sidebar {
+    .widget {
+        .widget-title {
+            border-bottom: 1px solid #d9d9d9;
+            padding: 0 0 5px 0;
+            margin: 10px 0 10px 0;
+            font-size: 18px;
+        }
+        & > ul {
+            & > li {
+                border-bottom: 1px dashed rgba(255,255,255,0.3);
+                padding: 5px 0;
+            }
+        }
+
+        &.widget_calendar {
+            color: #333333;
+        }
+    }
+}

@@ -36,6 +36,7 @@ Please visit [Opal Support](https://wordpress.org/support/theme/opal/) in case o
 = 1.2.6 - January 12, 2020 =
 * Major changes to support WordPress 5.x
 * Bootstrap 4 integration
+* Google Fonts Added
 * Reduce theme size and improved performace
 
 = 1.2.5 - November 2, 2014 =

@@ -1,0 +1,80 @@
+/**
+* ----------------------------------------------------------------------------------------
+* Base styles.
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    position: relative;
+    color: #222222;
+    font: 16px/22px 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/**
+ * Default spacing for paragraphs.
+ */
+p {
+    margin-bottom: 20px;
+}
+
+/**
+ * Default styles for all headings.
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 21px;
+    font-family: 'Gelasio', serif;
+}
+
+/**
+ * Links.
+ */
+a {
+    color: #e74c3c;
+    text-decoration: none;
+
+    &:hover {
+        color: #2c3e50;
+        text-decoration: none;
+    }
+}
+
+/**
+ * Blockquotes.
+ */
+blockquote {
+    font-style: italic;
+    & cite {
+        display: block;
+    }
+}
+
+/**
+ * HR.
+ */
+hr {
+    margin: 20px 0;
+    border-color: #ecf0f1;
+}
+
+/**
+ * Make sure videos and embeds fit inside their containers.
+ */
+embed,
+iframe,
+object,
+video {
+    max-width: 100%;
+}
+
+/**
+ * Code.
+ */
+code {
+    white-space: normal;
+}

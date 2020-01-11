@@ -58,26 +58,22 @@
         <?php } else { ?>
 			<div class="container header-contents">
 				<div class="header-inner row">
-					<div class="col-sm-6">
+					<div class="col-sm-6 col-md-4">
 						<div class="site-logo">
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 						</div>
 					</div> <!-- .col-sm-6 -->
-					<div class="col-sx-8">
-
-					</div> <!-- .col-sx-8 -->
+					<div class="col-sx-8 col-md-8"></div> <!-- .col-sx-8 -->
 				</div> <!-- .row -->
-
-				<div class="breadcrumb-wrap row">
-					<div class="col-md-12">
-						<?php opal_breadcrumbs(); ?>
-					</div>
-				</div>
-
 			</div> <!-- .container .header-contents -->
         <?php } ?>
 	</header> <!-- .site-header -->
+	<div class="opal-breadcrumb">
+		<div class="container">
+			<?php opal_breadcrumbs(); ?>
+		</div>
+	</div>
 
 	<!-- main content area -->
 	<div class="container">

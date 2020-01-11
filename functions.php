@@ -11,12 +11,24 @@
  *	0.1 - defination constants
  * --------------------------------------------------------------------------------------------------------------
  */
+$theme = wp_get_theme('opal');
 
-define( 'FRAMEWORK', get_template_directory() . '/framework' );
-define( 'THEMEROOT', get_stylesheet_directory_uri() );
-define( 'IMAGES', THEMEROOT . '/assets/images' );
-define( 'SCRIPTS', THEMEROOT . '/assets/js' );
-define( 'STYLES', THEMEROOT . '/assets/css' );
+if ( $theme ) {
+	define( 'OPAL_VERSION', $theme->version );
+}
+
+if ( ! defined( 'OPAL_DIR_PATH' ) ) {
+	define( 'OPAL_DIR_PATH', trailingslashit( get_template_directory() ) );
+}
+if ( ! defined( 'OPAL_DIR_URI' ) ) {
+	define( 'OPAL_DIR_URI', trailingslashit( get_stylesheet_directory_uri() ) );
+}
+
+define( 'FRAMEWORK', OPAL_DIR_PATH . 'framework' );
+define( 'THEMEROOT', OPAL_DIR_URI );
+define( 'IMAGES', OPAL_DIR_URI . 'assets/images' );
+define( 'SCRIPTS', OPAL_DIR_URI . 'assets/js' );
+define( 'STYLES', OPAL_DIR_URI . 'assets/css' );
 
 
 /**
@@ -120,21 +132,26 @@ if ( ! function_exists( 'opal_setup' ) ) {
 
 if ( ! function_exists( 'opal_scripts' ) ) {
 	function opal_scripts() {
-		// Adds support for pages with threaded comments
-		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-			wp_enqueue_script( 'comment-reply' );
-		}
+		// google fonts
+		wp_enqueue_style(
+			'opal-google-fonts',
+			'https://fonts.googleapis.com/css?family=Gelasio|Roboto&display=swap'
+		);
+		
+		// Load the stylesheets
+		wp_enqueue_style( 'master', STYLES . '/master.css' );
+		wp_enqueue_style( 'font-awesome', STYLES . '/font-awesome.css' );
+		wp_enqueue_style( 'style', THEMEROOT . '/style.css' );
 
 		// load scripts
 		wp_enqueue_script( 'bootstrap.min', SCRIPTS . '/bootstrap/bootstrap.min.js', array( 'jquery' ), null, true );
 		wp_enqueue_script( 'masonry' );
 		wp_enqueue_script( 'opal-custom', SCRIPTS . '/scripts.js', array( 'jquery' ), null, true );
 
-		// Load the stylesheets
-		wp_enqueue_style( 'master', STYLES . '/master.css' );
-		wp_enqueue_style( 'font-awesome', STYLES . '/font-awesome.css' );
-		wp_enqueue_style( 'style', THEMEROOT . '/style.css' );
-
+		// Adds support for pages with threaded comments
+		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+			wp_enqueue_script( 'comment-reply' );
+		}
 	}
 
 	add_action( 'wp_enqueue_scripts', 'opal_scripts' );

@@ -12,4 +12,11 @@
  * Domain Path: /lang
  */
 
- @import "node_modules/bootstrap/scss/bootstrap"; 
+@import './partials/base';
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+@import './partials/header';
+@import './partials/widgets';
+@import './partials/wordpress';
+@import './partials/footer';

@@ -24,7 +24,7 @@ function opal_breadcrumbs() {
 
     } else {
 
-        echo '<ul class="breadcrumb"><li><a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . '</li> ';
+        echo '<ul class="breadcrumb mb-0"><li><a href="' . $homeLink . '">' . $home . '</a> ' . $delimiter . '</li> ';
 
         if ( is_category() ) {
             $thisCat = get_category(get_query_var('cat'), false);

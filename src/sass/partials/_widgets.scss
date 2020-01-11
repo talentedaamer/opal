@@ -1,0 +1,41 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Widget styles.
+ * ----------------------------------------------------------------------------------------
+ */
+.widget {
+    margin-bottom: 40px;
+    word-wrap: break-word;
+
+    & ul,
+    & ol {
+        padding-left: 0;
+        list-style: none;
+
+        & li {
+            & ul,
+            & ol {
+                margin-left: 20px;                
+            }
+        }
+    }
+
+    &.widget_tag_cloud {
+        .tag-cloud-link {
+            display: inline-block;
+            font-size: 1em !important;
+            border: 1px solid #fff;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            margin-right: 5px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/**
+* Custom widget: Business hours.
+*/
+.widget-business-hours ul li span {
+    font-weight: bold;
+}
