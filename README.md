@@ -2,11 +2,11 @@
 -----------------------------
 Opal WordPress Theme is responsive, elegant and clean Theme. Opal WordPress Theme being responsinve is optimized for all devices like iPhone, Tablet, macbook, desktop & all other wide and small devices. Theme supports all WordPress features e.g; custom header, custom background, post thumbnails, post formats, breadcrumbs etc. With jQuery and Masonry its gallery is neat and clean and well formated, it also has masonry layout for 404 recent posts and not found page recent posts. Theme also have different jquery animations. Theme is widgetized and is translation ready. French is already translated in the theme.
 
-Requires at least: 4.5
-Tested up to: 5.3.2
-Stable tag: 1.2.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
+* Requires at least: 4.5
+* Tested up to: 5.3.2
+* Stable tag: 1.2.6
+* License: GNU General Public License v2 or later
+* License URI: LICENSE
 
 ### Installation.
 ----------------
