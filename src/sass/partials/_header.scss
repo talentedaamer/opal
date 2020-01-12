@@ -6,7 +6,6 @@
 .site-header {
     background-color: white;
     margin-bottom: 40px;
-    padding: 20px 0;
 
     .site-logo {
         .site-title {
@@ -17,10 +16,6 @@
             font-size: 0.875em;
         }
     }
-}
-
-.opal-breadcrumb {
-    margin-bottom: 20px;
 }
 
 .header-banner {
@@ -39,5 +34,55 @@
     top: 40%;
     & a {
         color: white;
+    }
+}
+
+/**
+ * ----------------------------------------------------------------------------------------
+ * Navigation styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+.top-menu {
+    background-color: #ff6165;
+
+    .main-nav {
+        margin: 0;
+        background-color: transparent;
+        border: none;
+
+        .navbar-nav {
+            & > li {
+                &  > a {
+                    color: #4b4e4f;
+                }
+            }
+        }
+
+        .dropdown-menu {
+            padding: 15px;
+
+            & > li {
+                & > a {
+                    padding: 5px 0;
+                    border-bottom: 1px dashed #d9d9d9;
+
+                    &:hover {
+                        background-color: transparent;
+                    }
+                }
+
+                &:last-child a {
+                    border-bottom: medium none;
+                    padding-bottom: 0;
+                }
+            }
+
+            .active > a {
+                color: #ff6165;
+                background-color: transparent;
+                border-bottom: 1px solid #ff6165;
+            }
+        }
     }
 }

@@ -7,8 +7,9 @@
 ?>
 
 
-		</div> <!-- .row -->
-	</div> <!-- .container -->
+			</div> <!-- .row -->
+		</div> <!-- .container -->
+	</div> <!-- .main-content -->
 
 
 	<!-- footer -->

@@ -11,61 +11,46 @@
 <?php get_header() ?>
 
 <div class="col-md-12">
-	
 	<div class="container-404">
-		<header class="entry-header">
-			<h1><?php _e( 'Error 404 - Nothing Found', 'opal' ) ?></h1>
+		<header class="entry-header text-center mb-5">
+			<h1><?php _e( 'Error 404 - Not Found', 'opal' ) ?></h1>
+			<?php _e( 'It looks like nothing was found here. Try searching for something else.', 'opal' ) ?>
 		</header>
-		<p><?php _e( 'It looks like nothing was found here. Try searching for something else.', 'opal' ) ?></p>
 
-		<div class="search-wrap col-md-6">
-			<!-- get search form -->
+		<div class="search-wrap col-md-6 mx-auto">
+			<!-- get searchForm template -->
 			<?php get_search_form(); ?>
 		</div>
 
-		<header class="entry-header">
+		<div class="recent-posts mt-5">
+		<header class="entry-header mb-3">
 			<h3><?php _e( 'Recent Posts', 'opal' ) ?></h3>
 		</header>
-
+		<?php 
+		// WP_Query arguments
+		$query_args = array (
+			'post_type'              => 'post',
+			'posts_per_page'		 => 10,
+			'offset'				 => 0,
+			'ignore_sticky_posts'    => 1
+		);
+		// The Query
+		$recent_posts = new WP_Query( $query_args );
+		if( $recent_posts->have_posts() ) :
+		?>
 		<div class="recent-posts-wrap row">
-			<?php 
-			// WP_Query arguments
-			$query_args = array (
-				'post_type'              => 'post',
-				'posts_per_page'		 => 12,
-				'offset'				 => 0,
-				'ignore_sticky_posts'    => 1
-			);
-			// The Query
-			$recent_posts = new WP_Query( $query_args );
-			if($recent_posts->have_posts()) : ?>
-			
 			<?php while($recent_posts->have_posts()) : $recent_posts->the_post(); ?>
-		    <div class="item-wrap col-md-3 col-sm-4 col-xs-12">
-		    	<div class="item">
-		         <?php if( has_post_thumbnail() ) : ?>
-		         	<figure class="post-thumb">
-			         	<a href="<?php the_permalink(); ?>">
-			         		<?php the_post_thumbnail('404-thumbs'); ?>
-			         	</a>
-		         <?php else : ?>
-		         	<figure class="no-post-thumb">
-				         <a href="<?php the_permalink(); ?>">
-				         	<span class="no-image-icon fa fa-picture-o"></span>
-				         </a>
-		         <?php endif; ?>	
-				        <div class="overlay post-desc">
-				         	<h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-				        </div> <!-- .overlay -->   
-			        </figure>
-				</div> <!-- .item -->
-			</div> <!-- .col-md-3 -->
+				<div class="col-md-6 mb-4">
+					<?php get_template_part( 'template-parts/loop', 'card-grid' ); ?>
+				</div>
 			<?php endwhile; ?>
-
-			<?php else: ?>
-			      Sorry ! There are no posts yet.
-			<?php endif; ?>
 		</div>
+		<?php
+		else:
+			_e( 'Sorry ! There are no posts yet.', 'opal' );
+		endif; // have_posts()
+		?>
+		</div> <!-- recent-posts -->
 
 	</div> <!-- .container-404 -->
 </div>

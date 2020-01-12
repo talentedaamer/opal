@@ -1,0 +1,178 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * Main content styles.
+ * ----------------------------------------------------------------------------------------
+ */
+/**
+ * Container adjacent to the sidebar.
+ * This will host the posts or page content.
+ */
+.main-content {
+    margin-bottom: 40px;
+}
+
+// .post.type-post,
+// .page.type-page {
+//     margin-bottom: 40px;
+// }
+  
+/**
+ * 404.
+ */
+.container-404 {
+    // margin-bottom: 40px;
+    // text-align: center;
+}
+.container-404 .recent-posts-wrap .item {
+    position: relative;
+}
+.container-404 .recent-posts-wrap .item .post-thumb img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+.container-404 .recent-posts-wrap .item .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    padding: 10px;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container-404 .recent-posts-wrap .item .overlay .post-title a {
+    margin: 0 0 10px 0;
+    padding: 5px 0;
+    color: white;
+    border-bottom: 1px solid #d9d9d9;
+    display: inline;
+    line-height: 30px;
+}
+.container-404 .recent-posts-wrap .item .overlay > p {
+    color: white;
+    margin: 0;
+}
+.container-404 .recent-posts-wrap .item .overlay > p > btn-primary {
+    margin-top: 10px;
+}
+.container-404 .recent-posts-wrap .item .no-post-thumb > a {
+background: none repeat scroll 0 0 #ccc;
+display: block;
+height: 250px;
+line-height: 250px;
+}
+
+/**
+* --------------------------------------------------------------------------------------------------------------
+*	article section
+* --------------------------------------------------------------------------------------------------------------
+*/
+.main-content .post,
+.main-content .page,
+.sidebar .widget,
+.comments-area,
+.container-404 {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.entry-header h1 {
+margin: 0 0 10px 0;
+padding: 0;
+}
+
+.entry-thumbnail {
+margin: 0 0 20px 0;
+}
+.entry-thumbnail img {
+width: 100%;
+height: auto;
+}
+
+.entry-meta li > .fa {
+color: #ff6165;
+margin: 0 5px 0 0;
+}
+
+.entry-footer p {
+margin: 0;
+}
+.entry-footer .author-title {
+margin: 0 0 10px 0;
+}
+
+.page-header {
+background-color: white;
+border: 1px solid #d9d9d9;
+padding: 42px;
+margin: 0 0 42px;
+position: relative;
+overflow: hidden;
+}
+.page-header h1 {
+margin: 0;
+}
+.page-header p {
+margin: 10px 0 0 0;
+}
+/**
+* Entry header.
+*/
+.entry-header {
+word-wrap: break-word;
+}
+
+/**
+* Entry meta.
+*/
+.sticky .entry-meta .meta-date {
+display: none;
+}
+.entry-meta .meta-icon {
+background-color: #ff6165;
+width: 100px;
+height: 100px;
+font-size: 22px;
+text-align: center;
+color: white;
+line-height: 160px !important;
+position: absolute;
+right: -50px;
+top: -50px;
+transform: rotate(45deg);
+}
+
+/**
+* Entry content.
+*/
+.entry-content {
+word-wrap: break-word;
+overflow: hidden;
+}
+
+.gallery .gallery-item {
+padding: 10px !important;
+}
+.gallery .gallery-item .gallery-icon {
+position: relative;
+}
+.gallery .gallery-item .gallery-icon a img {
+width: 100%;
+height: auto;
+max-width: 100%;
+}
+.gallery .gallery-item .gallery-caption {
+width: 90%;
+background-color: rgba(0, 0, 0, 0.3);
+color: white;
+display: none;
+margin: 0 10px 10px !important;
+text-align: center;
+position: absolute;
+bottom: 0;
+left: 0;
+}

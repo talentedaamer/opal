@@ -44,7 +44,7 @@
 	</div> <!-- .top-menu -->
 
 	<!-- header -->
-	<header class="site-header" role="banner">
+	<header class="site-header py-5 mb-5" role="banner">
 
 	    <?php 
         $header_image = get_header_image();
@@ -76,5 +76,6 @@
 	</div>
 
 	<!-- main content area -->
-	<div class="container">
-		<div class="row">
+	<div class="main-content py-5">
+		<div class="container">
+			<div class="row">
